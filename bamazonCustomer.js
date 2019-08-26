@@ -119,25 +119,25 @@ function displayInventory() {
 		console.log('Existing Inventory: ');
 		console.log('...................\n');
 
-        //     var strOut = '';
-        //     for (var i = 0; i < data.length; i++) {
-        //         strOut = '';
-        //         strOut += 'Item ID: ' + data[i].id + '  //  ';
-        //         strOut += 'Product Name: ' + data[i].product_name + '  //  ';
-        //         strOut += 'Department: ' + data[i].department_name + '  //  ';
-        //         strOut += 'Price: $' + data[i].price + '\n';
+            var strOut = '';
+            for (var i = 0; i < data.length; i++) {
+                strOut = '';
+                strOut += 'Item ID: ' + data[i].id + '  //  ';
+                strOut += 'Product Name: ' + data[i].product_name + '  //  ';
+                strOut += 'Department: ' + data[i].department_name + '  //  ';
+                strOut += 'Price: $' + data[i].price + '\n';
 
-		// 	console.log(strOut);
-        // }
+			console.log(strOut);
+        }
         
-        data.forEach(function (product){
+        // data.forEach(function (product){
                
-                    // strOut = '';
-                    console.log('Item ID: ' + product.id + '  //  ');
-                    console.log('Product Name: ' + product.product_name + '  //  ');
-                    console.log('Department: ' + product.department_name + '  //  ');
-                    console.log('Price: $' + product.price + '\n');
-        }) 
+        //             // strOut = '';
+        //             console.log('Item ID: ' + product.id + '  //  ');
+        //             console.log('Product Name: ' + product.product_name + '  //  ');
+        //             console.log('Department: ' + product.department_name + '  //  ');
+        //             console.log('Price: $' + product.price + '\n');
+        // }) 
 
 	  	console.log("---------------------------------------------------------------------\n");
 
