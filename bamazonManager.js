@@ -161,7 +161,7 @@ function addInventory() {
 	inquirer.prompt([
 		{
 			type: 'input',
-			name: 'item_id',
+			name: 'id',
 			message: 'Please enter the Item ID for stock_count update.',
 			validate: validateInteger,
 			filter: Number
@@ -174,7 +174,7 @@ function addInventory() {
 			filter: Number
 		}
 	]).then(function(input) {
-		// console.log('Manager has selected: \n    item_id = '  + input.item_id + '\n    additional quantity = ' + input.quantity);
+		// console.log('Manager has selected: \n     = '  + input.item_id + '\n    additional quantity = ' + input.quantity);
 
 		var item = input.id;
 		var addQuantity = input.quantity;
@@ -201,7 +201,7 @@ function addInventory() {
 				console.log('Updating Inventory...');
 
 				// Construct the updating query string
-				var updateQueryStr = 'UPDATE products SET stock_quantity = ' + (productData.stock_quantity + addQuantity) + ' WHERE item_id = ' + item;
+				var updateQueryStr = 'UPDATE products SET stock_quantity = ' + (productData.stock_quantity + addQuantity) + ' WHERE id = ' + item;
 				// console.log('updateQueryStr = ' + updateQueryStr);
 
 				// Update the inventory

@@ -37,7 +37,7 @@ function promptUserPurchase() {
 	inquirer.prompt([
 		{
 			type: 'input',
-			name: 'item_id',
+			name: 'id',
 			message: 'Please enter the Item ID which you would like to purchase.',
 			validate: validateInput,
 			filter: Number
@@ -50,7 +50,7 @@ function promptUserPurchase() {
 			filter: Number
         }
 	]).then(function(input) {
-		// console.log('Customer has selected: \n    item_id = '  + input.item_id + '\n    quantity = ' + input.quantity);
+		// console.log('Customer has selected: \n    id = '  + input.item_id + '\n    quantity = ' + input.quantity);
 
 		var item = input.id;
 		var quantity = input.quantity;
@@ -79,7 +79,7 @@ function promptUserPurchase() {
 					console.log('Congratulations, the product you requested is in stock! Placing order!');
 
 					// Construct the updating query string
-					var updateQueryStr = 'UPDATE products SET stock_quantity = ' + (productData.stock_quantity - quantity) + ' WHERE item_id = ' + item;
+					var updateQueryStr = 'UPDATE products SET stock_quantity = ' + (productData.stock_quantity - quantity) + ' WHERE id = ' + item;
 					// console.log('updateQueryStr = ' + updateQueryStr);
 
 					// Update the inventory
