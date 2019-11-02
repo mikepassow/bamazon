@@ -21,7 +21,7 @@ The customer interface allows the user to view the current inventory of store it
 
 <li>The Add New Product option allows the user to enter details about a new product which will be entered into the database upon completion of the form.</li>
 
-<h2>Screenshot Of How It Works</h2>
+<h2>Screenshot of How it Works</h2>
 <div>
     <img src="screenshots/bamazon.png" width="400px"> 
 </div>
