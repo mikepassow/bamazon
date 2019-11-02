@@ -20,3 +20,7 @@ The customer interface allows the user to view the current inventory of store it
 <li>The Add to Inventory option allows the user to select a given item ID and add additional inventory to the target item.</li>
 
 <li>The Add New Product option allows the user to enter details about a new product which will be entered into the database upon completion of the form.</li>
+
+<div>
+    <img src="screenshots/bamazon.png" width="400px"> 
+</div>
